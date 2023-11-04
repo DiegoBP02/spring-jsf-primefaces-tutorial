@@ -95,6 +95,15 @@ public class Empresa implements Serializable {
 	public void setRamoAtividade(RamoAtividade ramoAtividade) {
 		this.ramoAtividade = ramoAtividade;
 	}
+	
+
+	public TipoEmpresa getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(TipoEmpresa tipo) {
+		this.tipo = tipo;
+	}
 
 	public static long getSerialversionuid() {
 		return serialVersionUID;
