@@ -1,6 +1,7 @@
 package com.algaworks.erp.model;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.util.Date;
 import java.util.Objects;
 
@@ -43,6 +44,17 @@ public class Empresa implements Serializable {
 	@ManyToOne
 	@JoinColumn(name = "ramo_atividade_id", nullable = false)
 	private RamoAtividade ramoAtividade;
+	
+	@Column(precision = 10, scale = 2)
+	private BigDecimal faturamento;
+	
+	public BigDecimal getFaturamento() {
+        return faturamento;
+    }
+	
+	public void setFaturamento(BigDecimal faturamento) {
+        this.faturamento = faturamento;
+    }
 	
 	@Enumerated(EnumType.STRING)
 	@Column(nullable = false, length = 30)
