@@ -35,6 +35,9 @@
 				
 				<h:outputLabel />
 				<h:commandButton value="Salvar" actionListener="#{gestaoEmpresasBean.salvar}"/>
+				
+				<h:outputLabel />
+				<h:commandLink value="Ajuda?" action="#{gestaoEmpresasBean.ajuda}"/>
 			</h:panelGrid>
 			
 			<h:dataTable value="#{[0, 0, 0, 0]}">
@@ -56,7 +59,7 @@
 				
 				<h:column>
 					<f:facet name="header">
-						<h:outputText value="Tipo Emprsa" />
+						<h:outputText value="Tipo Empresa" />
 					</f:facet>
 					
 					<h:outputText value="LDTA" />
